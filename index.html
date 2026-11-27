@@ -16,6 +16,19 @@
 .footer-links{display:flex;flex-wrap:wrap;gap:1rem}
 @media(max-width:480px){.projects article{padding:1.15rem}.nav nav{flex-wrap:wrap}}
 </style>
+<style>
+.skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;margin-top:2rem}
+.skills-grid ul{padding-left:1.2rem;margin-bottom:0}
+.skills-grid li+li{margin-top:.5rem}
+.skills-summary{color:var(--soft);max-width:55rem;margin-top:2rem}
+.certifications{margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--line)}
+.certification-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;list-style:none;padding:0;margin:1.5rem 0 0}
+.certification-list strong,.certification-list span{display:block}
+.certification-list strong{color:var(--ink)}
+.certification-list small{display:block;margin-top:.3rem}
+@media(max-width:720px){.skills-grid,.certification-list{grid-template-columns:1fr}}
+@media print{#skills{padding-block:1rem}#skills h3,#skills strong,#skills li,.skills-summary{color:#222}.skills-grid,.certification-list{grid-template-columns:1fr}.skills-grid>div,.certification-list li{break-inside:avoid}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -47,6 +60,53 @@
 <article><p class="label">Customer delivery</p><h3>Scaling Rovo adoption</h3><p>I scope engagements around a workflow worth improving, define success with the customer, and guide the work through launch and adoption. One Fortune 500 customer grew AI consumption sevenfold in four months.</p></article>
 <article><p class="label">Agent design</p><h3>Building for real workflows</h3><p>My agent projects have covered backlog cleanup, readiness checks, triage, and change-request review. I use guardrails and evaluation to check how agents behave in the workflows they support.</p></article>
 <article><p class="label">Delivery design</p><h3>Making engagements repeatable</h3><p>I lead the design of an AI adoption engagement model, including intake, delivery packages, and enablement that helps teams scope and run customer work consistently.</p></article>
+</div>
+</section>
+<section class="shell section" id="skills" aria-labelledby="skills-title">
+<h2 id="skills-title">Skills &amp; Expertise</h2>
+<div class="skills-grid">
+  <div>
+    <h3>AI &amp; Agents</h3>
+    <ul>
+      <li>Enterprise AI adoption strategy</li>
+      <li>AI agent design and multi-agent workflows</li>
+      <li>Prompt engineering and structured outputs</li>
+      <li>Model Context Protocol (MCP)</li>
+      <li>Agent governance, identity, and access</li>
+      <li>AI use case discovery and prioritization</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Platforms &amp; Tools</h3>
+    <ul>
+      <li><strong>AI</strong> &middot; Rovo, ChatGPT, Codex, Claude</li>
+      <li><strong>Enterprise collaboration</strong> &middot; Jira, Confluence, Atlassian Analytics</li>
+      <li><strong>Service management</strong> &middot; Jira Service Management, Cherwell Service Management, Ivanti Service Management</li>
+      <li><strong>Software development lifecycle</strong> &middot; GitHub, Cursor</li>
+      <li><strong>Automation &amp; integration</strong> &middot; n8n, REST APIs, SQL</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Domains</h3>
+    <ul>
+      <li>IT Service Management &amp; Enterprise Service Management (ITSM/ESM)</li>
+      <li>Software Development Lifecycle (SDLC)</li>
+      <li>Business process automation and employee workflows</li>
+      <li>Asset &amp; Configuration Management (CMDB)</li>
+      <li>Enterprise integration and identity management</li>
+    </ul>
+  </div>
+</div>
+<p class="skills-summary">I lead customers from discovery and technical scoping through proofs of concept, implementation, and adoption, aligning teams around clear outcomes.</p>
+<div class="certifications">
+  <h3>Certifications &amp; Badges</h3>
+  <ul class="certification-list">
+    <li><strong>Applied AI Foundations</strong><span>OpenAI</span><small>Issued November 2026 &middot; Expires May 2027</small></li>
+    <li><strong>AI Foundations</strong><span>OpenAI</span><small>Issued November 2026 &middot; Expires May 2027</small></li>
+    <li><strong>AI Fluency &mdash; Framework &amp; Foundations</strong><span>Anthropic &middot; 2026</span></li>
+    <li><strong>Rovo Fundamentals</strong><span>Atlassian &middot; 2026</span></li>
+    <li><strong>AI Expert</strong><span>Section School &middot; 2025</span><small>AI adoption strategy, custom GPTs, and AI ROI business cases</small></li>
+  </ul>
 </div>
 </section>
 <section class="resume-band" id="resume" aria-labelledby="resume-title">
@@ -84,15 +144,15 @@
     <p>Led and developed more than 20 personnel through performance coaching and individualized training.</p>
   </article>
   <article>
-    <h3>Education &amp; certifications</h3>
-    <p>B.S. in Information Systems, Clarkson University. AI Expert, Section School. AI Fluency, Anthropic. Rovo Fundamentals, Atlassian.</p>
+    <h3>Education</h3>
+    <p>B.S. in Information Systems, Clarkson University.</p>
   </article>
 </div>
 </div>
 </section>
 <section class="shell section about" id="about" aria-labelledby="about-title">
 <div><p class="label">A little more about me</p><h2 id="about-title">How I work</h2></div>
-<div><p>I’m a systems thinker. I like figuring out where a workflow gets stuck, what people need to move it forward, and how we’ll know the change helped.</p><p>Technical consulting taught me to stay close to how things get implemented. Leading teams in the Guard taught me to make expectations clear and give people room to take ownership. I bring both to how I work with customers and develop the people around me.</p><p>Outside work, I paint banners and pet portraits, and I’m learning mahjong.</p></div>
+<div><p>I’m a systems thinker. I like figuring out where a workflow gets stuck, what people need to move it forward, and how we’ll know the change helped.</p><p>Technical consulting taught me to stay close to how things get implemented. Leading teams in the Guard taught me to make expectations clear and give people room to take ownership. I bring both to how I work with customers and develop the people around me.</p><p>Outside work, I paint special event banners and I’m learning how to play mahjong!</p></div>
 </section>
 </main>
 <footer class="shell footer"><span>Amanda Bast · College Station, Texas</span><div class="footer-links"><a href="https://github.com/amandabast">GitHub</a><a href="https://www.linkedin.com/in/rankinab/">LinkedIn</a></div></footer>
